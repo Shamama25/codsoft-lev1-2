@@ -15,7 +15,7 @@
             <li><a href="#">TV Shows</a></li>
             <li><a href="#">Movies</a></li>
             <li><a href="#">Latest</a></li>
-            <li><a href="#">My Collection</a></li>
+            <li><a href="#">My List</a></li>
         </ul>
         <div class="search">
            <input type="text" placeholder="Search"> 
@@ -35,10 +35,23 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laudantium maxime aut fuga doloremque nisi sit iste animi, reiciendis aliquam ipsum, natus ut illo, quod fugit nostrum qui vitae a!</p>
             <div class="buttons">
                 <a href="#"><i class="fa-solid fa-play" aria-hidden="true"></i>Play</a>
-                <a href="#"><i class="fa-solid fa-plus" aria-hidden="true"></i>My Collections</a>
+                <a href="#"><i class="fa-solid fa-plus" aria-hidden="true"></i>My List</a>
             </div>
         </div>
-        <a class="play"><img src="assets/play-button.jpg"/>Watch Trailer</a>
+        <a class="play" onclick="toggleVideo();"><img src="assets/play.png"/>Watch Trailer</a>
     </div>
+    <div class="trailer">
+        <video src="assets/trailer.mp4" controls="true" autoplay="true"></video> 
+        <img src="assets/close.png" class="close" onclick="toggleVideo();">
+    </div>
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>        
 </body>
 </html>
