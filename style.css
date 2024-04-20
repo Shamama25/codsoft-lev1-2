@@ -59,7 +59,7 @@ header .logo img{
 .search input::placeholder{
     color: #fff;
 }
-.search .fa-solid{
+.search .fa-search{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
