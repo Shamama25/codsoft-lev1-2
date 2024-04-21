@@ -7,6 +7,9 @@
 body{
     background: #000;
 }
+
+/*  HEADER  */
+
 header{
     position: absolute;
     top: 0;
@@ -21,6 +24,9 @@ header{
 header .logo img{
     max-width: 150px;
 }
+
+/*  NAV BAR */
+
 .nav{
     display: flex;
 }
@@ -37,6 +43,9 @@ header .logo img{
 .nav li:hover a{
     color: #de0611;
 }
+
+/*  SEARCH BAR  */
+
 .search{
     position: relative;
     width: 300px;
@@ -59,14 +68,17 @@ header .logo img{
 .search input::placeholder{
     color: #fff;
 }
-.search .fa-magnifying-glass {
+.search .fa-solid{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding-right: 20px;
+    margin-left: 15px;
     color: #fff;
     border-right: 1px solid #fff;
 }
+
+/*  BANNER  */
+
 .banner{
     position: relative;
     width: 100%;
@@ -192,6 +204,8 @@ header .logo img{
     filter: invert(1);
     max-width: 32px;
 }
+
+/*  RESPONSIVENESS  */
 
 @media(max-width: 991px){
     header{
